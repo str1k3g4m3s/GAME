@@ -498,14 +498,14 @@
         <h1 style="white-space: nowrap; font-size: clamp(16px, 2.5vw, 40px)">Jogador: ${nome} | Vidas: ${vidas} | Pontos: ${pontos} | Nivel: ${nivel}</h1>
         <p style="white-space: nowrap; font-size: clamp(15px, 2.5vw, 20px)">A invenção do chuveiro elétrico surgiu em qual país?</p>
         <div class="button-grid">
-            <button onclick="vericlick(false)">a) FRANÇA</button>
-            <button onclick="vericlick(false)">b) INGLATERRA</button>
-            <button onclick="vericlick(true)">c) BRASIL</button>
-            <button onclick="vericlick(false)">d) ITÁLIA</button>
+            <button onclick="vericlicknivel11(false)">a) FRANÇA</button>
+            <button onclick="vericlicknivel11(false)">b) INGLATERRA</button>
+            <button onclick="vericlicknivel11(true)">c) BRASIL</button>
+            <button onclick="vericlicknivel11(false)">d) ITÁLIA</button>
         `;
 }
 
-function vericlick(isCorrect) {
+function vericlicknivel11(isCorrect) {
     if (isCorrect) {
         acerto();
     } else {
@@ -624,11 +624,19 @@ function nivel16(){
         <h1 style="white-space: nowrap; font-size: clamp(16px, 2.5vw, 40px)">Jogador: ${nome} | Vidas: ${vidas} | Pontos: ${pontos} | Nivel: ${nivel}</h1>
         <p style="white-space: nowrap; font-size: clamp(16px, 2.5vw, 20px)">Quem descobriu a Dietilamida do Ácido Lisérgico?</p>
         <div class="button-grid">
-            <button onclick="vericlick(false)">a) Nikola Tesla</button>
-            <button onclick="vericlick(false)">b) Benjamin Button</button>
-            <button onclick="vericlick(false)">c) Platão</button>
-            <button onclick="vericlick(true)">d) Albert Hoffman</button>
+            <button onclick="vericlicnivel16k(false)">a) Nikola Tesla</button>
+            <button onclick="vericlicknivel16(false)">b) Benjamin Button</button>
+            <button onclick="vericlicknivel16(false)">c) Platão</button>
+            <button onclick="vericlicknivel16(true)">d) Albert Hoffman</button>
         `;
+}
+
+function vericlicknivel16(isCorrect) {
+    if (isCorrect) {
+        acerto();
+    } else {
+        errou();
+    }
 }
 
 function nivel17(){
@@ -844,14 +852,14 @@ function nivel24(){
        <h1 style="white-space: nowrap; font-size: clamp(16px, 2.5vw, 40px)">Jogador: ${nome} | Vidas: ${vidas} | Pontos: ${pontos} | Nível: ${nivel}</h1>
         <p style="white-space: nowrap; font-size: clamp(20px, 2.5vw, 30px)">Qual a montanha mais alta do Brasil?</p>
         <div class="button-grid">
-        <button onclick="vericlick(true)">a) Pico da Neblina</button>
-        <button onclick="vericlick(false)">b) Pico Paraná</button>
-        <button onclick="vericlick(false)">c) Monte Roraima</button>
-        <button onclick="vericlick(false)">d) Pico da Bandeira</button>
+        <button onclick="vericlicknivel24(true)">a) Pico da Neblina</button>
+        <button onclick="vericlicknivel24(false)">b) Pico Paraná</button>
+        <button onclick="vericlicknivel24(false)">c) Monte Roraima</button>
+        <button onclick="vericlicknivel24(false)">d) Pico da Bandeira</button>
     `;
 }
 
-function vericlick(isCorrect) {
+function vericlicknivel24(isCorrect) {
     if (isCorrect) {
         acerto();
     } else {
@@ -1045,7 +1053,7 @@ function vericlick(isCorrect) {
 
    
     document.querySelector('.container').innerHTML = `
-        <h1 style="white-space: nowrap; font-size: clamp(20px, 2.5vw, 40px)">Suas vidas acabaram!</h1>
+        <h1 style="white-space: nowrap; font-size: clamp(20px, 2.5vw, 40px); Color: red;">Suas vidas acabaram!</h1>
         <p style="white-space: nowrap; font-size: clamp(20px, 2.5vw, 30px)">Jogador: ${nome} | Pontos: ${pontos} | Nivel: ${nivel}</p>
         <button onclick="restart()">Reiniciar</button>
     `;
@@ -1149,7 +1157,7 @@ function vericlick(isCorrect) {
 
   
     document.querySelector('.container').innerHTML = `
-        <h1 style="white-space: nowrap; font-size: clamp(20px, 2.5vw, 40px); color: red;">Você venceu!</h1>
+        <h1 style="white-space: nowrap; font-size: clamp(20px, 2.5vw, 40px)">Você venceu!</h1>
         <p style="white-space: nowrap; font-size: clamp(20px, 2.5vw, 30px)">Jogador: ${nome} | Pontos: ${pontos} | Nivel: ${nivel}</p>
         <button onclick="restart()">Reiniciar</button>
     `;
